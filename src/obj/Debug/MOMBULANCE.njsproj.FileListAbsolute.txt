@@ -1,0 +1,6 @@
+C:\Users\dangi\Desktop\Projects\NodejsWebApp1\NodejsWebApp1\obj\Debug\MOMBULANCE.njsproj.AssemblyReference.cache
+C:\Users\dangi\Desktop\Projects\NodejsWebApp1\NodejsWebApp1\obj\Debug\MOMBULANCE.njsproj.CoreCompileInputs.cache
+C:\Users\dangi\Desktop\Projects\NodejsWebApp1\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\dangi\Desktop\Projects\MomBulance\MomBulance\obj\Debug\MOMBULANCE.njsproj.AssemblyReference.cache
+C:\Users\dangi\Desktop\Projects\MomBulance\MomBulance\obj\Debug\MOMBULANCE.njsproj.CoreCompileInputs.cache
+C:\Users\dangi\Desktop\Projects\MomBulance\MomBulance\bin\Microsoft.NodejsTools.WebRole.dll
