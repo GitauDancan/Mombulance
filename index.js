@@ -1,14 +1,14 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 1338;
 var path = require("path");
 
 const bot = { "data": "1" }
 app.get('/', (req, res) => {
     // res.status(200).send({ bot: bot });
     // console.log(req
-    res.render('login')
+    res.render('app')
 })
 
 console.log(__dirname)
