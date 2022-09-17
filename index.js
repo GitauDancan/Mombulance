@@ -1,18 +1,24 @@
 const express = require("express");
-const bodyParser = require('body-parser');
 const app = express();
+var path = require("path");
+const bodyParser = require('body-parser');
+const router = require('./src/router');
 const mysql = require('mysql');
 const session = require('express-session');
 const port = process.env.PORT || 1340;
-var path = require("path");
 const dotenv = require('dotenv');
-const router = require('')
+
 
 
 
 const bot = { "data": "1" }
-app.use(bodyparser.json())
-const urlencodedParser = bodyParser.urlencoded({ extended: true })
+app.use(bodyParser.json())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use('/route', router);
+
 app.get('/', (req, res) => {
     // res.status(200).send({ bot: bot });
     // console.log(req
@@ -23,11 +29,11 @@ app.get('/login', (req, res) => {
     res.render('login');
 });
 
-app.post('/login', urlencodedParser, (req, res) => {
-    res.json(req.body);
-    console.log(req.body)
-    res.render('app', { qs: req.body })
-});
+// app.post('/login', urlencodedparser, (req, res) => {
+//     res.json(req.body);
+//     console.log(req.body)
+//     res.render('app', { qs: req.body })
+// });
 
 console.log(__dirname)
 app.use(express.static(__dirname + '/src'));
@@ -42,7 +48,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
-app.use('/route', router);
+
+
 
 
 // const mysql = require('mysql')

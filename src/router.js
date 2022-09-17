@@ -10,11 +10,12 @@ const credentials = {
 
 //login user
 
-router.post('/login', (req, res) => {
+router.post('/login', (req = express.request, res = express.response) => {
+    console.log(req.body)
     if (req.body.username == credentials.username && req.body.password == credentials.password) {
-        req.session.user = req.body.username;
+        // req.session.user = req.body.username;
 
-        res.redirect('/app');
+        res.redirect('app');
         // res.end("Login succesful");
     }
     else {
@@ -23,11 +24,8 @@ router.post('/login', (req, res) => {
 })
 
 router.get('/app', (req, res) => {
-    if (req.session.user) {
-        res.render('app', { user: req.session.user })
-    } else {
-        res.send("Invalid")
-    }
+
+    res.render('app')
 })
 
-module.export = router;
+module.exports = router;
