@@ -6,10 +6,13 @@ const session = require('express-session');
 const port = process.env.PORT || 1340;
 var path = require("path");
 const dotenv = require('dotenv');
-const router = require('./routes')
+const router = require('')
+
+
 
 const bot = { "data": "1" }
-const urlencodedParser = bodyParser.urlencoded({ extended: false })
+app.use(bodyparser.json())
+const urlencodedParser = bodyParser.urlencoded({ extended: true })
 app.get('/', (req, res) => {
     // res.status(200).send({ bot: bot });
     // console.log(req
