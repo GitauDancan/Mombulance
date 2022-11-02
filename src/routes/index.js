@@ -1,15 +1,21 @@
 const express = require('express');
 const path = require('path');
 
+
 const router = express.Router({ mergeParams: true });
 
 // GET ROUTES
 router.get('/', (req, res) => {
+
+  res.render('home');
+});
+
+router.get('/ambulanceregistration', (req, res) => {
   session=req.session;
   if(session.userid){
-    res.render('home');
+    res.render('ambulanceregistration');
   }else
-  res.render('login');
+  res.render('home');
 });
 
 //username and password
@@ -37,6 +43,12 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/signup', (req, res) => {
+  res.render('signup');
+});
+router.get('/home', (req, res) => {
+  res.render('home');
+});
 router.get('/ambulanceregistration', (req, res) => {
   res.render('ambulanceregistration');
 });

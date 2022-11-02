@@ -25,81 +25,70 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Container wrapper -->
-    <div class="container">
-      <!-- Navbar brand -->
-      <a class="navbar-brand me-2" href="https://mdbgo.com/">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-          height="16"
-          alt="MDB Logo"
-          loading="lazy"
-          style="margin-top: -1px;"
-        />
-      </a>
-  
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarButtonsExample"
-        aria-controls="navbarButtonsExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-success navbar-static-top">
+  <div class="container-fluid">
+      <a href="#" class="navbar-brand">MOMBULANCE</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
       </button>
-  
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarButtonsExample">
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dashboard</a>
-          </li>
-        </ul>
-        <!-- Left links -->
-  
-        <div class="d-flex align-items-center">
-          <a href="login">
-            <button type="button" class="btn btn-link px-3 me-2">
-              Login
-            </button>      
-          </a>
-          <button type="button" class="btn btn-primary me-3">
-            Sign up for free
-          </button>
-          <a
-            class="btn btn-dark px-3"
-            href="https://github.com/mdbootstrap/mdb-ui-kit"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
+          <div class="navbar-nav ms-auto">
+            <a href="home" class="nav-item nav-link active">HOME</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ACTION</a>
+                <div class="dropdown-menu">
+                    <a href="login" class="dropdown-item">User</a>
+                    <a href="signup" class="dropdown-item">Admin</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      </div>
+  </div>
+</nav>
+<!-- Navbar -->
+<!--Navbar End-->
+    <form action="home" method="post">
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-light text-dark" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center">
+    
+                <div class="mb-md-5 mt-md-4 pb-5">
+    
+                  <h2 class="fw-bold mb-2 text-uppercase">MomBulance Login</h2>
+                  <p class="text-white-50 mb-5">Please enter your Username and password!</p>
+    
+                  <div class="form-outline form-white mb-4">
+                    <input type="text" name="username" placeholder="Username" id="username" required class="form-control form-control-lg" />
+                    <label class="form-label" for="typeEmailX">Username</label>
+                  </div>
+    
+                  <div class="form-outline form-white mb-4">
+                    <input type="password" name="password" placeholder="Password" id="password" required class="form-control form-control-lg" />
+                    <label class="form-label" for="typePasswordX">Password</label>
+                  </div>
+    
+                  <p class="small mb-5 pb-lg-2"><a class="text-dark-50" href="#!">Forgot password?</a></p>
+                  <div class="col-12">
+                    <input class="btn btn-light btn-lg" type="submit" value="Login" />
+                  </div>    
+                </div>
+    
+                <div>
+                  <p class="mb-0">Don't have an account? <a href="signup" class="text-dark-50 fw-bold">Sign Up</a>
+                  </p>
+                </div>
+    
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navbar -->
-    <div class="login">
-        <h1>MomBulance Login</h1>
-        <form action="home" method="post">
-            <label for="username">
-                <!-- font awesome icon -->
-                <i class="fas fa-user"></i>
-            </label>
-            <input type="text" name="username" placeholder="Username" id="username" required>
-            <label for="password">
-                <i class="fas fa-lock"></i>
-            </label>
-            <input type="password" name="password" placeholder="Password" id="password" required>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+    </section>
+  </form>
 
       <!--Footer-->
 <!--Footer Start-->
