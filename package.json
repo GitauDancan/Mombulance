@@ -12,10 +12,12 @@
   "dependencies": {
     "alert": "^5.1.1",
     "cookie-parser": "^1.4.6",
+    "database-js": "^3.0.11",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
-    "html": "^1.0.0"
+    "html": "^1.0.0",
+    "mysql": "^2.18.1"
   }
 }
