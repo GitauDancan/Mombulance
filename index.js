@@ -8,25 +8,44 @@ const session = require('express-session');
 const port = process.env.PORT || 1340;
 const dotenv = require('dotenv');
 
+app.set('views', path.join(__dirname, '/src/Views'));
+app.set('view engine', 'ejs');
+
+app.use(session({
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true
+}));
 
 
 
 const bot = { "data": "1" }
 app.use(bodyParser.json())
 app.use(bodyParser.json())
+app.use(express.static('src'))   
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use('/route', router);
 
+
 app.get('/', (req, res) => {
     // res.status(200).send({ bot: bot });
     // console.log(req
-    res.render('app')
+    res.render('login')
 })
 
 app.get('/login', (req, res) => {
     res.render('login');
+});
+app.get('/', (req, res) => {
+    // res.status(200).send({ bot: bot });
+    // console.log(req
+    res.render('book')
+})
+
+app.get('/book', (req, res) => {
+    res.render('book');
 });
 
 // app.post('/login', urlencodedparser, (req, res) => {
@@ -37,16 +56,10 @@ app.get('/login', (req, res) => {
 
 console.log(__dirname)
 app.use(express.static(__dirname + '/src'));
+
+
 // app.use(express.static(path.join(__dirname, '/src')));
 // app.use('/static', express.static('public'))
-app.set('views', path.join(__dirname, '/src/Views'));
-app.set('view engine', 'ejs');
-
-app.use(session({
-    secret: 'secret',
-    resave: false,
-    saveUninitialized: true
-}));
 
 
 
