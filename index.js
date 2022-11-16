@@ -22,7 +22,7 @@ app.use(session({
 const bot = { "data": "1" }
 app.use(bodyParser.json())
 app.use(bodyParser.json())
-app.use(express.static('src'))   
+app.use(express.static('src'))
 app.use(bodyParser.urlencoded({
     extended: true
 }));

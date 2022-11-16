@@ -10,6 +10,7 @@
   "author": "Dan",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.2",
     "ejs": "^3.1.8",
@@ -19,5 +20,16 @@
     "html": "^1.0.0",
     "mysql": "^2.18.1",
     "routes": "^2.1.0"
+=======
+    "alert": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "database-js": "^3.0.11",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "html": "^1.0.0",
+    "mysql": "^2.18.1"
+>>>>>>> 4cfd82c84d1e6e7e78696b517d4dfa832624bc65
   }
 }

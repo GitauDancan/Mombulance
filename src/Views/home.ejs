@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <link rel="stylesheet" href="assets/production/css/home.min.css"> -->
+  <!-- Development Stylesheets -->
+  <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/lib/css/responsive.css">
+  <link rel="stylesheet" href="assets/lib/css/select2.min.css">
+  <link rel="stylesheet" href="assets/lib/css/spacing.css">
+  <link rel="stylesheet" href="assets/lib/css/style.css">
+  <link rel="stylesheet" href="assets/lib/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/lib/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/lib/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" src="assets/lib/css/magnific-popup.css">
+  <link rel="stylesheet" src="assets/css/home.css">
+  <link rel="stylesheet" src="assets/css/header.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body onLoad="typeWriter()">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success navbar-static-top">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">MOMBULANCE</a>
+      <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button> -->
+      <div class="navbar-nav ms-auto">
+        <a href="home" class="nav-item nav-link active">HOME</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">ACTION</a>
+          <div class="dropdown-menu">
+            <a href="login" class="dropdown-item">User</a>
+            <a href="adminregister" class="dropdown-item">Admin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <!--Navbar End-->
+
+  <!--Banner Start-->
+  <div class="banner-slider" style="background-image: url(/assets/images/banner.JPEG)">
+    <div class="bg"></div>
+    <div class="bannder-table">
+      <div class="banner-text">
+        <h1 id="typeit"> </h1>
+        <a href="ambulanceregistration">
+          <button type="button" class="btn btn-outline-info btn-rounded">Report Emergency</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Banner End-->
+
+  <!--Choose-Area Start-->
+  <div class="choose-area pb_90">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="headline">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="choose-item flex" style="background-image: url(assets/images/cloak.JPEG)">
+            <div class="choose-text">
+              <h4>QUICK RESPONSE</h4>
+              <p>
+                Iisque persius ne sit, simul zril vix eu. Qui ne iusto epicuri suscipiantur, sit ne probo adhuc.
+                Liber
+                verterem interpretaris nam et, ea pro solum expetendis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="choose-item flex" style="background-image: url(assets/images/satisfication.JPEG)">
+            <div class="choose-text">
+              <h4>100% SATISFACTION</h4>
+              <p>
+                Duo luptatum delicata evertitur ad. Usu te quaerendum definitiones, ne mundi volutpat duo, in
+                dissentias temporibus pri. Duo ferri dicant definitionem te.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="choose-item flex" style="background-image: url(assets/images/qualityservice.JPEG)">
+            <div class="choose-text">
+              <h4>QUALITY SERVICE</h4>
+              <p>
+                Amet dolor oratio ex has, stet repudiare definiebas vim ne. Id probo facilisis usu, pri aliquam
+                omnesque cu. Vide assentior id qui, quando possim eos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Choose-Area End-->
+
+
+
+
+
+
+
+  <!--Footer-->
+  <!--Footer Start-->
+  <div class="footer-bottom pt_50 pb_50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/terms">Terms and Conditions</a></li>
+              <li><a href="/privacypolicy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="copy-text">
+            <p>
+              Copyright &copy; 2020
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer End-->
+
+  <!--Scroll-Top-->
+  <div class="scroll-top" onclick="topFunction()">
+    <i class="fa fa-angle-up"></i>
+  </div>
+
+  <script>
+    var i = 0;
+    var txt = 'WELCOME TO MomBulance';
+    var speed = 60;
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("typeit").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+
+  <!-- JavaScript -->
+  <script defer src="lib/js/jquery-3.4.1.min.js"></script>
+  <script defer src="lib/js/popper.min.js"></script>
+  <script defer src="lib/js/owl.carousel.min.js"></script>
+  <script defer src="lib/js/bootstrap.bundle.js"></script>
+  <script defer src="lib/js/all.min.js"></script>
+  <script defer src="lib/js/select2.full.min.js"></script>
+  <script defer src="js/home.js"></script>
+
+</body>
+
+</html>
